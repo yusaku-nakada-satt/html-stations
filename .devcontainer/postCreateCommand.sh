@@ -25,4 +25,8 @@ echo "git secrets setting"
 git secrets --install -f && git secrets --register-aws && git secrets --add 'BEGIN\sRSA\sPRIVATE\sKEY'
 git secrets --add -a "(\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?"
 
+# test tool install
+yarn install
+yarn playwright install
+
 exit 0
